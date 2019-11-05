@@ -1,4 +1,4 @@
-package com.xia.sp011;
+package com.xia.sp11;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
