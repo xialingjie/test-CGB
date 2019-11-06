@@ -6,14 +6,11 @@ spring:
     port: 5672
     username: admin
     password: admin
-#配置端口
-#server:
-#  port: 8001
   
 eureka:
   client:
-    service-url:     #向3台eureka进行注册
-      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka, http://eureka3:2003/eureka
+    service-url:    
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
       
 ---
 spring:

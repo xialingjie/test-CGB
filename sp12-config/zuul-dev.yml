@@ -13,10 +13,10 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka, http://eureka3:2003/eureka
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
 zuul:
-  retryable: true  #启用重试
+  retryable: true  
 
 ribbon:
   ConnectTimeout: 1000
@@ -30,11 +30,11 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 500   #降低 hystrix 超时时间，以便测试降级
+            timeoutInMilliseconds: 500 
 
             
 management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream    #暴露监控端点
+        include: hystrix.stream  
