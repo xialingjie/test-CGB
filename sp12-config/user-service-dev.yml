@@ -18,8 +18,8 @@ eureka:
 management:
   endpoints:
     web:
-      exposure:
-        include: refresh
+      exposure:   
+        include: refresh   #动态配置刷新
 ---
 spring:
   profiles: user1
